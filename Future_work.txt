@@ -1,0 +1,3 @@
+- impliment fibbonaci and prime numbers
+- join future hacktoberfests
+- To learn more
