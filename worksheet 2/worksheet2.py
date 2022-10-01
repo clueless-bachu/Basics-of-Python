@@ -10,7 +10,6 @@ Do not alter the file structure!!!
 """
 
 
-
 def n_sum(n: int) -> int:
     """
     Use for loops to get the sum of first n numbers
@@ -21,9 +20,10 @@ def n_sum(n: int) -> int:
     """
     # Add code here
     nsum = 0
-    for i in range(n+1): #answer should be 3
+    for i in range(n+1):  # answer should be 3
         nsum = i + nsum
     return nsum
+
 
 def n_cubes(n: int) -> int:
     """
@@ -34,10 +34,8 @@ def n_cubes(n: int) -> int:
     if n = 5, return a list [1, 8, 27, 64, 125]
     """
     # Add code here
-    cube_a = []
-    for i in range (1, n+1): 
-        cube_a.append(i**3)
-    return cube_a
+    return [i**3 for i in range(1, n+1)]
+
 
 def string_concatenation(a: str, b: str) -> str:
     """
@@ -50,6 +48,7 @@ def string_concatenation(a: str, b: str) -> str:
     # Add code here
     return a+b
 
+
 def is_even(a: int) -> bool:
     """
     Write a function that check if a number is even or not
@@ -59,10 +58,8 @@ def is_even(a: int) -> bool:
     is_even(308237049) should return False
     """
     # Add code here
-    if a%2 == 1:
-        return False
-    else:
-        return True
+    return a % 2 == 0
+
 
 def first_n_divisible_numbers(n: int, m: int) -> None:
     """
@@ -73,8 +70,4 @@ def first_n_divisible_numbers(n: int, m: int) -> None:
     if n=7, m= 9, then you have to return [9,18,27,36,45,54,63]
     """
     # Add code here
-    ans = []
-    for i in range (1, n+1):
-        ans.append(i*m)
-    return ans
-
+    return [i*m for i in range(1, n+1)]

@@ -9,15 +9,17 @@ then all the testcases should pass
 Do not alter the file structure!!!
 """
 
-## Basic Operators
+# Basic Operators
+
 
 def add(a: int, b: int) -> int:
     '''
     This function takes 2 integers a and b. It then returns the sum.
     '''
 
-    # Add code here 
+    # Add code here
     return a+b
+
 
 def subt(a: int, b: int) -> int:
     '''
@@ -25,8 +27,9 @@ def subt(a: int, b: int) -> int:
     '''
 
     # Add code here
-    
+
     return a-b
+
 
 def mult(a: int, b: int) -> int:
     '''
@@ -35,6 +38,7 @@ def mult(a: int, b: int) -> int:
 
     # Add code here
     return a*b
+
 
 def div(a: int, b: int) -> int:
     '''
@@ -55,23 +59,24 @@ def and_gate(a: bool, b: bool) -> bool:
     Implement AND gate for inputs a and b.
     '''
 
-    ## add code here
+    # add code here
     and_res1 = a and b
     return and_res1
-    
+
 
 def or_gate(a: bool, b: bool) -> bool:
     '''
     Implement OR gate for inputs a and b.
     '''
 
-    ## add code here
+    # add code here
     return a or b
+
 
 def xor_gate(a: bool, b: bool) -> bool:
     '''
     Implement XOR gate for inputs a and b.
     '''
 
-    ## add code here
+    # add code here
     return a ^ b
